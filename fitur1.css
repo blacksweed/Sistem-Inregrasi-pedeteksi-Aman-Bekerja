@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f4f8;
+  color: #333;
+}
+
+.fitur-header {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #004080;
+  color: white;
+  gap: 15px;
+}
+
+.fitur-logo {
+  height: 50px;
+  width: auto;
+}
+
+.fitur-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.fitur-container {
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.kamera-feed {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.kamera-img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.keterangan {
+  color: #e60000;
+  font-weight: bold;
+}
+
+.atribut-status {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.atribut-grid {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.atribut-item {
+  text-align: center;
+}
+
+.atribut-item img {
+  width: 120px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.status {
+  margin-top: 10px;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+.status.hijau {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.status.merah {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+@media (max-width: 768px) {
+  .atribut-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .fitur-title {
+    font-size: 1.2rem;
+  }
+
+  .kamera-img {
+    max-width: 100%;
+  }
+}
